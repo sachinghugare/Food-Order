@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".China">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Chinese"
+            android:textColor="#000000"
+
+            />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="430dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:padding="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Noodles(₹40)"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/noodles_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:clickable="true"
+                            android:onClick="noodles_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/noodles_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/noodle_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:clickable="true"
+                            android:onClick="noodles_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Manchurain Noddles(₹45)"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/m_n_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:clickable="true"
+                            android:onClick="m_noodle_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/m_n_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/m_n_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="m_noodle_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Schezwan Noodles(₹45)"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/s_n_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="s_nooodle_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/s_n_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/s_n_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="s_nooodle_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Fried Noodles(₹40)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/fried_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="f_noodle_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fried_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/fried_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="f_noodle_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+
+                        android:padding="10dp"
+                        android:text="Hakka Noodles(₹45)"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/hakka_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="hakka_inc1"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hakka_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/hakka_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="hakka_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Noodle Soup(₹50)"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <Button
+                            android:id="@+id/n_soup_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="n_s_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/n_soup_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/n_soup_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="n_s_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Fried Rice(₹40)"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/fried_rice_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="f_rice_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/fried_rice_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/fried_rice_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="f_rice_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Schezwan rice(₹50)"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/s_rice_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="s_rice_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/s_rice_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/s_rice_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="s_rice_dec1"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginBottom="0dp"
+                        android:padding="10dp"
+                        android:text="Manchurian Rice(₹50)"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:onClick="m_rice_dec"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/m_rice_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="m_rice_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/m_rice_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/m_rice_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="m_rice_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Chineese Bhel(₹30)"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/ch_bhel_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="ch_bhel_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ch_bhel_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/ch_bhel_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="ch_bhel_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/dessert_tot_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_alignEnd="@+id/scrollView"
+            android:layout_marginEnd="49dp"
+            android:padding="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_marginRight="49dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/button7"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="-40dp"
+            android:background="#ffbc7a"
+            android:clickable="true"
+            android:onClick="MM"
+            android:text="Main Menu" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="284dp"
+
+            android:layout_marginLeft="284dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffbc7a"
+            android:onClick="Process"
+            android:text="Proceed" />
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

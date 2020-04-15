@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "93446997506",
+    "firebase_url": "https://oderdetaile.firebaseio.com",
+    "project_id": "oderdetaile",
+    "storage_bucket": "oderdetaile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93446997506:android:e63f6a646d74344067491b",
+        "android_client_info": {
+          "package_name": "com.example.foododer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93446997506-4ga8vetkdu82fpl0ananllqnn994jdna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foododer",
+            "certificate_hash": "f57bd9d0e07a76658235e3e76b3ee548d489300e"
+          }
+        },
+        {
+          "client_id": "93446997506-70296dhpdc73pfqe6hi2ppp45pgh0ato.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGQj-sM0S0fyOLhwVAJyhYxAZDugnqKQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93446997506-70296dhpdc73pfqe6hi2ppp45pgh0ato.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

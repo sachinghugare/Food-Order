@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Oct 09 15:24:12 IST 2019
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\GANESH\\AndroidStudioProjects\\Foododer\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+0.path=classes.dex
+0.set=DEX
+count=1

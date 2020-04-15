@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".South">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="South Indian"
+            android:textColor="#000000"
+
+            />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="430dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:padding="15dp"
+            android:layout_alignParentLeft="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:text="Plain Dosa(₹30)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/plain_dosa_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="plain_dosa_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/palin_dosa_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/plain_dosa_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="plain_dosa_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:text="Cheese Dosa(₹50)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/cheese_dosa_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="cheese_dosa_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cheese_dosa_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/vanila_ice_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="cheese_dosa_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:text="Masala Dosa(₹40)"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/masala_dosa_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="masala_dosa_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/masala_dosa_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/masala_dosa_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="masala_dosa_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Paper Dosa(₹45)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/papaer_dosa_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="paper_dosa_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/papaer_dosa_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/papaer_dosa_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="paper_dosa_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+                        android:padding="10dp"
+                        android:text="Mysore Dosa(₹50)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/my_dosa_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="my_dosa_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/my_dosa_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/my_dosa_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="my_dosa_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:text="Idli(₹35)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <Button
+                            android:id="@+id/idli_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="idli_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/idli_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/ildli_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="idli_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:text="Medu Vada(₹20)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/medu_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="medu_vada_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/medu_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/medu_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="medu_vada_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:text="Uttapa(₹30)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/uttapa_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="uttapa_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/uttapa_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/uttapa_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="uttapa_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:clickable="true"
+                        android:onClick="Process"
+                        android:padding="10dp"
+                        android:text="Cheese Uttapa(₹50)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/ch_uttapa_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="ch_uttapa_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cheesse_uttapa_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/cheese_uttapa_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="ch_uttapa_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="MM"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        android:text="Onion Uttapa(₹40)"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/on_uttapa_inc"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="on_uttapa_inc"
+                            android:text="+"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/on_order"
+                            android:layout_width="34dp"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:paddingBottom="10dp"
+                            android:text="__"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/on_uttapa_dec"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:background="#ffbc7a"
+
+                            android:onClick="on_uttapa_dec"
+                            android:text="-"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/dessert_tot_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_alignEnd="@+id/scrollView"
+            android:layout_marginEnd="49dp"
+            android:padding="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_marginRight="49dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/button7"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="-37dp"
+            android:background="#ffbc7a"
+            android:onClick="MM"
+            android:text="Main Menu" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="314dp"
+
+            android:layout_marginLeft="314dp"
+            android:layout_marginTop="12dp"
+            android:background="#ffbc7a"
+            android:clickable="true"
+            android:onClick="Process"
+            android:text="Proceed" />
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
